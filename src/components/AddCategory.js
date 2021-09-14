@@ -11,6 +11,7 @@ const AddCategory = ({ setCategory}) => {
 
     const handleSubmit = (e) =>{
         e.preventDefault();
+        //console.log('handlesubmit', inputValue)
         //setCategory([...categories, inputValue])
         if( inputValue.length > 2){
             setCategory(cats => [ inputValue, ...cats]);
@@ -20,6 +21,7 @@ const AddCategory = ({ setCategory}) => {
 
     return (
         <form onSubmit={handleSubmit}>
+        <p>{ inputValue }</p>
           <input 
               type="text"
               value={ inputValue }
@@ -28,7 +30,7 @@ const AddCategory = ({ setCategory}) => {
         </form>
     )
 }
-AddCategory.prototypes ={
+AddCategory.propTypes ={
     setCategory : PropTypes.func.isRequired
 }
 export default AddCategory;

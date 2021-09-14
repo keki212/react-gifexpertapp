@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas del componente <GigGrid /> Debe mostrar el componente correctamente 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeInLeft"
+  >
+    One Pounch
+  </h3>
+  <p
+    className="animate__animated animate__flash"
+  >
+    Cargando.....
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
+
+exports[`Pruebas del componente <GigGrid /> Debe mostrar items cuando se carga las imagenes 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeInLeft"
+  >
+    One Pounch
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="ABC"
+      key="ABC"
+      title="Cualquier cosa"
+      url="https://localhost/cualquiercosa/cosa.jpg"
+      username="La cosa"
+    />
+    <GifGridItem
+      id="ABD"
+      key="ABD"
+      title="Cualquier cosa"
+      url="https://localhost/cualquiercosa/cosa.jpg"
+      username="La cosa"
+    />
+    <GifGridItem
+      id="ABE"
+      key="ABE"
+      title="Cualquier cosa"
+      url="https://localhost/cualquiercosa/cosa.jpg"
+      username="La cosa"
+    />
+  </div>
+</Fragment>
+`;
